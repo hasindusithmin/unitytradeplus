@@ -2,6 +2,7 @@ import '../styles/w3.css'
 import '../styles/Oswald.css'
 import '../styles/Open-Sans.css'
 import '../styles/globals.css'
+import "../styles/autocomplete.min.css"
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
