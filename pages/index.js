@@ -27,7 +27,9 @@ export default function Home() {
 
   return (
     <>
-      <Head></Head>
+      <Head>
+        <title>unitytrade+ | home</title>
+      </Head>
 
       <Header/>
 
