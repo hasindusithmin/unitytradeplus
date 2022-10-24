@@ -14,6 +14,13 @@ export default function Home() {
     if (window.innerWidth < 500) setHeight(300)
     else setHeight(500)
 
+    setTimeout(()=>{
+      const divs = document.getElementsByTagName('div');
+      for (let div of divs) {
+        if (div.style.height == '500px') div.style.display = 'none';
+      }
+    },3000)
+
   }, [])
 
 
