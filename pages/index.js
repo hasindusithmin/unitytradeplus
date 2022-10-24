@@ -29,7 +29,7 @@ export default function Home() {
     <>
       <Head></Head>
 
-      <Header />
+      <Header/>
 
       {height && <CryptoMarketWidget height={height} />}
 
