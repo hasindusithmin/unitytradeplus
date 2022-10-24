@@ -1,5 +1,4 @@
 import Script from "next/script";
-import { useState } from "react";
 
 export default function CryptoMarketWidget({ height }) {
 

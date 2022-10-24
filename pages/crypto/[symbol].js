@@ -1,26 +1,62 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Header from "../../components/Header";
+import Chart from "../../components/Chart";
+import Technical from "../../components/Technical";
+import Tikcer from "../../components/Ticker";
 
 
 export default function Crypto() {
 
-    const [symbol,setSymbol] = useState(null);
-    const router = useRouter();
+    const [symbol,setSymbol] = useState(false)
 
-    useEffect(()=>{
-        const {symbol} = router.query;
-        setSymbol(symbol);
-    },[])
+   useEffect(() => {
+    
+    const _ = window.location.pathname.split('/').pop();
 
+    if (!symbol) setSymbol(_);
+
+    setTimeout(()=>{
+        const divs = document.getElementsByTagName('div');
+        for (let div of divs) {
+            if (div.style.width === '100%' && div.style.height !== '100%' && div.style.position !== 'relative' && div.style.background !== 'transparent') div.style.display = 'none';
+        }
+    },3000)
+     
+   }, [])
+   
     return (
         <>
             <Head>
-                <title>unitytrade+ | {symbol}usdt</title>
+                {symbol && <title>unitytrade+ | {symbol}usdt</title>}
                 <link rel="icon" type="image/svg" href={`/icons/${symbol}.svg`} />
+                <script src="https://s3.tradingview.com/tv.js" />
             </Head>
-            <Header icon={symbol} />
+            {symbol && <Header icon={symbol} />}
+
+            {
+                symbol
+                &&
+                <div className="w3-row w3-padding w3-border">
+
+                    <div className="w3-col l4">
+                        <div className="w3-white w3-margin">
+                            <Tikcer symbol={`${symbol.toUpperCase()}USDT`} />
+                        </div>
+                    </div>
+
+                    <div className="w3-col l8 s12">
+                        <div className="w3-container w3-margin">
+                            <Chart symbol={`${symbol.toUpperCase()}USDT`}/>
+                        </div>
+                        <div className="w3-container w3-margin">
+                            <Technical symbol={`${symbol.toUpperCase()}USDT`} />
+                        </div>
+                    </div>
+
+                </div>
+            }
+
         </>
     )
 }
