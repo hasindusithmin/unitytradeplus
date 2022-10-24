@@ -2,7 +2,7 @@ import { FaFacebookSquare, FaInstagramSquare, FaSnapchatSquare, FaFlickr, FaTwit
 export default function Navbar() {
 
     return (
-        <nav className="w3-bar w3-black w3-hide-small">
+        <nav className="w3-bar w3-black w3-hide-small w3-top">
             <span className="w3-bar-item w3-button"><FaFacebookSquare /></span>
             <span className="w3-bar-item w3-button"><FaInstagramSquare /></span>
             <span className="w3-bar-item w3-button"><FaSnapchatSquare /></span>
