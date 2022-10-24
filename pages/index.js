@@ -14,12 +14,12 @@ export default function Home() {
     if (window.innerWidth < 500) setHeight(300)
     else setHeight(500)
 
-    setTimeout(()=>{
+    setTimeout(() => {
       const divs = document.getElementsByTagName('div');
       for (let div of divs) {
         if (div.style.height == '500px') div.style.display = 'none';
       }
-    },3000)
+    }, 3000)
 
   }, [])
 
@@ -31,7 +31,7 @@ export default function Home() {
         <title>unitytrade+ | home</title>
       </Head>
 
-      <Header/>
+      <Header />
 
       {height && <CryptoMarketWidget height={height} />}
 
@@ -74,6 +74,17 @@ export default function Home() {
               <h4>SEARCH</h4>
             </div>
             <Search />
+          </div>
+
+          <div className="w3-white w3-margin">
+            <div className="w3-container w3-padding w3-black">
+              <h4>Advertise</h4>
+            </div>
+            <div className="w3-container w3-white">
+              <div className="w3-container w3-display-container w3-light-grey w3-section" style={{ height: '200px' }}>
+                <span className="w3-display-middle">Your AD Here</span>
+              </div>
+            </div>
           </div>
 
         </div>

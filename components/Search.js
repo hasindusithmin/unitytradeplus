@@ -1,14 +1,12 @@
 import icons from "../public/icons.json";
 import autoComplete from "@tarekraafat/autocomplete.js"
 import { useEffect } from "react";
-import { useRouter } from "next/router";
 
 export default function Search() {
 
-    const router = useRouter()
-
     const searchCrypto = () => {
-        
+        const value = document.getElementById('crypto').value;
+        window.location.href = `/crypto/${icons[value]}`
     }
 
     useEffect(() => {

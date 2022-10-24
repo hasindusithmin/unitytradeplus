@@ -1,13 +1,11 @@
 import Script from "next/script";
 export default function Footer() {
-    const wrapperStyle = {
-        // width: "100%",
-        // height: "100%"
-    }
+    
     return (
-        <footer className="w3-bottom" id="footer" style={wrapperStyle}>
+        <footer  className="w3-bottom" id="footer">
             <Script
                 id="ticker-tape"
+                async={true}
                 src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
                 onLoad={() => {
                     document.getElementById('footer').appendChild(document.getElementById('ticker-tape'));
