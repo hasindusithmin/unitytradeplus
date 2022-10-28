@@ -69,14 +69,14 @@ export default function Steam() {
 
     useEffect(() => {
         if (ideas) {
-            const endOffset = itemOffset + 5;
+            const endOffset = itemOffset + 6;
             setCurrentItems(ideas.slice(itemOffset, endOffset));
-            setPageCount(Math.ceil(ideas.length / 5));
+            setPageCount(Math.ceil(ideas.length / 6));
         }
-    }, [itemOffset, 5,ideas]);
+    }, [itemOffset, 6,ideas]);
 
     const handlePageClick = (event) => {
-        const newOffset = (event.selected * 5) % ideas.length;
+        const newOffset = (event.selected * 6) % ideas.length;
         setItemOffset(newOffset);
     };
 
@@ -108,7 +108,7 @@ export default function Steam() {
                                 breakLabel="..."
                                 nextLabel="&raquo;"
                                 onPageChange={handlePageClick}
-                                pageRangeDisplayed={5}
+                                pageRangeDisplayed={6}
                                 pageCount={pageCount}
                                 previousLabel="&laquo;"
                                 renderOnZeroPageCount={null}
