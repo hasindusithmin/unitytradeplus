@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Header from "../../components/Header";
-
+import Link from "next/link";
 
 export default function Blog() {
 
@@ -9,6 +9,7 @@ export default function Blog() {
             <Head>
                 <title>unitytrade+ | blog</title>
             </Head>
+            
             <Header />
 
             <div className="w3-row w3-padding w3-border">
@@ -18,36 +19,54 @@ export default function Blog() {
                         <div className="w3-container w3-padding w3-black">
                             <h4>Steam</h4>
                         </div>
-                        <div className="w3-container w3-white">
-                            <div className="w3-container w3-display-container w3-sand w3-section" style={{ height: '200px' }}>
-                                <span className="w3-display-middle w3-wide">BITCOIN</span>
+                        <Link href="/blog/bitcoin">
+                            <div className="w3-container w3-white">
+                                <div className="w3-container w3-display-container w3-sand w3-section" style={{ height: '200px' }}>
+                                    <span className="w3-display-middle w3-wide">BITCOIN</span>
+                                </div>
                             </div>
-                        </div>
-                        <div className="w3-container w3-white">
-                            <div className="w3-container w3-display-container w3-pale-red w3-section" style={{ height: '200px' }}>
-                                <span className="w3-display-middle w3-wide">COMMODITIES</span>
+                        </Link>
+
+                        <Link href="/blog/commodities">
+                            <div className="w3-container w3-white">
+                                <div className="w3-container w3-display-container w3-pale-red w3-section" style={{ height: '200px' }}>
+                                    <span className="w3-display-middle w3-wide">COMMODITIES</span>
+                                </div>
                             </div>
-                        </div>
-                        <div className="w3-container w3-white">
-                            <div className="w3-container w3-display-container w3-pale-green w3-section" style={{ height: '200px' }}>
-                                <span className="w3-display-middle w3-wide">CRYPTO</span>
+                        </Link>
+
+                        <Link href="/blog/crypto">
+                            <div className="w3-container w3-white">
+                                <div className="w3-container w3-display-container w3-pale-green w3-section" style={{ height: '200px' }}>
+                                    <span className="w3-display-middle w3-wide">CRYPTO</span>
+                                </div>
                             </div>
-                        </div>
-                        <div className="w3-container w3-white">
-                            <div className="w3-container w3-display-container w3-pale-yellow w3-section" style={{ height: '200px' }}>
-                                <span className="w3-display-middle w3-wide">CURRENCIES</span>
+                        </Link>
+
+                        <Link href="/blog/currencies">
+                            <div className="w3-container w3-white">
+                                <div className="w3-container w3-display-container w3-pale-yellow w3-section" style={{ height: '200px' }}>
+                                    <span className="w3-display-middle w3-wide">CURRENCIES</span>
+                                </div>
                             </div>
-                        </div>
-                        <div className="w3-container w3-white">
-                            <div className="w3-container w3-display-container w3-pale-blue w3-section" style={{ height: '200px' }}>
-                                <span className="w3-display-middle w3-wide">INDICES</span>
+                        </Link>
+
+                        <Link href="/blog/indices">
+                            <div className="w3-container w3-white">
+                                <div className="w3-container w3-display-container w3-pale-blue w3-section" style={{ height: '200px' }}>
+                                    <span className="w3-display-middle w3-wide">INDICES</span>
+                                </div>
                             </div>
-                        </div>
-                        <div className="w3-container w3-white">
-                            <div className="w3-container w3-display-container w3-section" style={{ height: '200px',backgroundColor:'#FAE6FA' }}>
-                                <span className="w3-display-middle w3-wide">STOCKS</span>
+                        </Link>
+
+                        <Link href="/blog/stocks">
+                            <div className="w3-container w3-white">
+                                <div className="w3-container w3-display-container w3-section" style={{ height: '200px',backgroundColor:'#FAE6FA' }}>
+                                    <span className="w3-display-middle w3-wide">STOCKS</span>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
+
                     </div>
                 </div>
 
