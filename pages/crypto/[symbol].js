@@ -40,10 +40,10 @@ export default function Crypto() {
                     <div className="w3-row w3-padding w3-border">
 
                         <div className="w3-col l8 s12">
-                            <div className="w3-container w3-margin">
+                            <div className="w3-margin">
                                 <Chart symbol={`${symbol.toUpperCase()}USDT`} />
                             </div>
-                            <div className="w3-container w3-margin">
+                            <div className="w3-margin">
                                 <Technical symbol={`${symbol.toUpperCase()}USDT`} />
                             </div>
                         </div>
