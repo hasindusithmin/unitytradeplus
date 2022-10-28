@@ -22,12 +22,12 @@ export default function Slidebar() {
                     <h4><b>UNITYTRADE</b><GoPlus size={18} /></h4>
                 </div>
                 <div className="w3-bar-block">
-                    <Link href="/"><span className="w3-bar-item w3-button"><FaHome size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >HOME</span></span></Link>
-                    <Link href="/about"><span className="w3-bar-item w3-button"><MdDescription size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >ABOUT</span></span></Link>
-                    <Link href="/contact"><span className="w3-bar-item w3-button"><MdContactMail size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >CONTACT</span></span></Link>
-                    <Link href="/blog"><span className="w3-bar-item w3-button"><FaBlogger size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >BLOG</span></span></Link>
-                    <Link href="/policy"><span className="w3-bar-item w3-button"><MdPolicy size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >POLICY</span></span></Link>
-                    <Link href="/signal"><span className="w3-bar-item w3-button w3-right"><GiAerialSignal size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >SIGNAL</span></span></Link>
+                    <Link href="/"><span className="w3-bar-item w3-button" onClick={w3_close} ><FaHome size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >HOME</span></span></Link>
+                    <Link href="/about"><span className="w3-bar-item w3-button" onClick={w3_close} ><MdDescription size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >ABOUT</span></span></Link>
+                    <Link href="/contact"><span className="w3-bar-item w3-button" onClick={w3_close} ><MdContactMail size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >CONTACT</span></span></Link>
+                    <Link href="/blog"><span className="w3-bar-item w3-button" onClick={w3_close} ><FaBlogger size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >BLOG</span></span></Link>
+                    <Link href="/policy"><span className="w3-bar-item w3-button" onClick={w3_close} ><MdPolicy size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >POLICY</span></span></Link>
+                    <Link href="/signal"><span className="w3-bar-item w3-button w3-right" onClick={w3_close} ><GiAerialSignal size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >SIGNAL</span></span></Link>
                 </div>
             </nav>
             <div className="w3-overlay w3-hide-large" onClick={w3_close} style={{ cursor: 'pointer' }} title="close side menu" id="myOverlay"></div>
