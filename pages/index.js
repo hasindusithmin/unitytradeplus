@@ -49,8 +49,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w3-container w3-margin">
-            <div className="w3-container w3-padding w3-black">
+          <div className="w3-white w3-margin">
+            <div className="w3-container w3-black">
               <h4>TAGS</h4>
             </div>
             <div className="w3-container w3-white">
