@@ -89,6 +89,8 @@ export default function Home() {
 
         </div>
       </div>
+
+      <div className="w3-row w3-padding-32"></div>
     </>
   )
 }

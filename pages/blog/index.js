@@ -9,7 +9,7 @@ export default function Blog() {
             <Head>
                 <title>unitytrade+ | blog</title>
             </Head>
-            
+
             <Header />
 
             <div className="w3-row w3-padding w3-border">
@@ -89,6 +89,8 @@ export default function Blog() {
                 </div>
 
             </div>
+
+            <div className="w3-row w3-padding-32"></div>
         </>
     )
 }
