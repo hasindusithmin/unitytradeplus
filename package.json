@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.0.5",
     "@tarekraafat/autocomplete.js": "^10.2.7",
     "cookies-next": "^2.1.1",
     "crypto": "^1.0.1",

@@ -1,6 +1,7 @@
 const { createHash, createHmac } = require('crypto')
 import jwt from "jsonwebtoken"
 import {setCookie} from "cookies-next"
+
 function checkSignature (token, { hash, ...data }) {
     const secret = createHash('sha256')
       .update(token)
