@@ -29,6 +29,7 @@ export default function Crypto() {
             <Head>
                 {symbol && <title>unitytrade+ | {symbol}usdt</title>}
                 <link rel="icon" type="image/svg" href={`/icons/${symbol}.svg`} />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <script src="https://s3.tradingview.com/tv.js" />
             </Head>
             {symbol && <Header icon={symbol} />}

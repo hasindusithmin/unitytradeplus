@@ -85,6 +85,7 @@ export default function Steam() {
             <Head>
                 {Steam && <title>blog | {Steam}</title>}
                 {Steam && <link rel="icon" type="image/png" sizes="128x128" href={`/blog/${Steam}.png`} />}
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
 
             <Header />

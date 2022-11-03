@@ -2,7 +2,7 @@
 import { FaHome, FaBlogger } from "react-icons/fa";
 import { MdPolicy, MdContactMail, MdDescription } from "react-icons/md"
 import { AiFillCloseCircle } from "react-icons/ai";
-import {GiAerialSignal} from "react-icons/gi"
+import {BsTelegram} from "react-icons/bs"
 import { GoPlus } from "react-icons/go";
 import Link from "next/link";
 export default function Slidebar() {
@@ -27,7 +27,7 @@ export default function Slidebar() {
                     <Link href="/contact"><span className="w3-bar-item w3-button" onClick={w3_close} ><MdContactMail size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >CONTACT</span></span></Link>
                     <Link href="/blog"><span className="w3-bar-item w3-button" onClick={w3_close} ><FaBlogger size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >BLOG</span></span></Link>
                     <Link href="/policy"><span className="w3-bar-item w3-button" onClick={w3_close} ><MdPolicy size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >POLICY</span></span></Link>
-                    <Link href="/signal"><span className="w3-bar-item w3-button w3-right" onClick={w3_close} ><GiAerialSignal size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >SIGNAL</span></span></Link>
+                    <Link href="/login"><span className="w3-bar-item w3-button w3-right" onClick={w3_close} ><BsTelegram size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >LOGIN</span></span></Link>
                 </div>
             </nav>
             <div className="w3-overlay w3-hide-large" onClick={w3_close} style={{ cursor: 'pointer' }} title="close side menu" id="myOverlay"></div>
