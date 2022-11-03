@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
       <div className="w3-content" style={{maxWidth:'1600px'}}>
         <Component {...pageProps} />
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </AuthContextProvider>
   )
 }

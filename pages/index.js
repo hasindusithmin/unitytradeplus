@@ -36,7 +36,7 @@ export default function Home() {
 
       <Header />
 
-      {/* {height && <CryptoMarketWidget height={height} />} */}
+      {height && <CryptoMarketWidget height={height} />}
 
       <div className="w3-row w3-padding w3-border">
         <div className="w3-col l8 s12">
