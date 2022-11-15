@@ -1,0 +1,32 @@
+.back {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+.container{
+  background-color: rgb(32, 16, 46);
+  opacity: 0.5;
+}
+
+
+.text-center{
+  color: azure;
+}
+
+.back{
+  width: 100%;
+    height: 500%;
+    background: url(https://gulfbrokerscom.azureedge.net/1054/r36U70ltazzZJokP-1583125916-forex-trader.jpg) repeat-x;
+    z-index: 110;
+}
+.para{
+  color: beige;
+}

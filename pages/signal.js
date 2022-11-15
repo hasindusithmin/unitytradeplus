@@ -67,6 +67,7 @@ export default function Signal() {
             <Head>
                 <title>unitytrade+ | signal</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link rel="icon" type="image/png" href="/signal.png" />
             </Head>
 
             <Header />
