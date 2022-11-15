@@ -34,7 +34,7 @@ export default function Slidebar() {
                     <Link href="/blog"><span className="w3-bar-item w3-button" onClick={w3_close} ><FaBlogger size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >BLOG</span></span></Link>
                     <Link href="/about"><span className="w3-bar-item w3-button" onClick={w3_close} ><MdDescription size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >ABOUT</span></span></Link>
                     <Link href="/contact"><span className="w3-bar-item w3-button" onClick={w3_close} ><MdContactMail size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >CONTACT</span></span></Link>
-                    <Link href="/policy"><span className="w3-bar-item w3-button" onClick={w3_close} ><MdPolicy size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >POLICY</span></span></Link>
+                    <Link href="/donate"><span className="w3-bar-item w3-button" onClick={w3_close} ><MdPolicy size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >DONATE</span></span></Link>
                     {
                         !user &&
                         <Link href="/login"><span className="w3-bar-item w3-button w3-right" onClick={w3_close} ><BsTelegram size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >LOGIN</span></span></Link>
