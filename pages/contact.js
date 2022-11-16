@@ -16,8 +16,8 @@ export default function Contact() {
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
           crossorigin="anonymous"
         />
-        {/* <Script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></Script>
-        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></Script> */}
+        <Script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></Script>
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></Script>
       </Head>
 
       <Header />
