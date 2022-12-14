@@ -2,7 +2,8 @@
 import { FaHome, FaBlogger,FaSignOutAlt } from "react-icons/fa";
 import { MdPolicy, MdContactMail, MdDescription } from "react-icons/md"
 import { AiFillCloseCircle } from "react-icons/ai";
-import { BsTelegram } from "react-icons/bs"
+import { BsTelegram } from "react-icons/bs";
+import {GiAerialSignal} from "react-icons/gi"
 import { GoPlus } from "react-icons/go";
 import Link from "next/link";
 import AuthContext from "../AuthContext";
@@ -42,6 +43,10 @@ export default function Slidebar() {
                     {
                         user &&
                         <Link href="/api/logout"><span className="w3-bar-item w3-button w3-right"><FaSignOutAlt size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >LOGOUT</span></span></Link>
+                    }
+                    {
+                        user &&
+                        <Link href="/signal"><span className="w3-bar-item w3-button"><GiAerialSignal size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >SIGNAL</span></span></Link>
                     }
 
                 </div>
