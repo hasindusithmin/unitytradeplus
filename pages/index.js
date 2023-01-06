@@ -5,6 +5,7 @@ import { useContext, useEffect, useState } from "react";
 import Tags from "../components/Tags";
 import Search from "../components/Search";
 import AuthContext from "../AuthContext";
+import Economic from "../components/Economic";
 export default function Home() {
 
   const user = useContext(AuthContext)
@@ -35,9 +36,12 @@ export default function Home() {
         <link rel="icon" type="image/png" href="/home.png" />
       </Head>
 
-      <Header />
+      <Header
+        quote="The future belongs to those who believe in the beauty of their dreams."
+        author="Eleanor Roosevelt"
+      />
 
-      {height && <CryptoMarketWidget height={height} />}
+      {/* {height && <CryptoMarketWidget height={height} />} */}
 
       <div className="w3-row w3-padding w3-border">
         <div className="w3-col l8 s12">
@@ -62,6 +66,17 @@ export default function Home() {
             </div>
           </div>
 
+          {/* <div className="w3-white w3-margin">
+            <div className="w3-container w3-black">
+              <h4>Economic Calendar</h4>
+            </div>
+            <div className="w3-container w3-white">
+              {height && <Economic height={height} />}
+            </div>
+          </div> */}
+
+
+
         </div>
         <div className="w3-col l4">
 
@@ -69,11 +84,11 @@ export default function Home() {
           {
             user &&
             <div className="w3-white w3-margin">
-              <img src={Object.keys(user).includes('photo_url') ? user['photo_url']:'https://via.placeholder.com/300/ffffbf?text=Set%20Telegram%20Profile%20Image'} alt="AVATAR" style={{ width: '100%' }} className="w3-grayscale" />
+              <img src={Object.keys(user).includes('photo_url') ? user['photo_url'] : 'https://via.placeholder.com/300/ffffbf?text=Set%20Telegram%20Profile%20Image'} alt="AVATAR" style={{ width: '100%' }} className="w3-grayscale" />
               <div className="w3-container w3-black">
                 <h4>{user['first_name']} {user['last_name']}</h4>
                 <p>
-                  {new Date(user['auth_date'] *1000).toUTCString()}
+                  {new Date(user['auth_date'] * 1000).toUTCString()}
                 </p>
               </div>
             </div>

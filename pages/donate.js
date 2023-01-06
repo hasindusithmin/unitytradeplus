@@ -23,7 +23,10 @@ export default function Donate() {
                 <link rel="icon" type="image/png" href="/donate.png" />
             </Head>
 
-            <Header />
+            <Header 
+                quote="We make a living by what we get, but we make a life by what we give."
+                author="Winston Churchill"
+            />
 
             <div className="w3-row w3-padding w3-border">
                 <div className="w3-white w3-margin">

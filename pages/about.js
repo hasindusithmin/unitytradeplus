@@ -6,9 +6,14 @@ export default function About(){
             <Head>
                 <title>unitytrade+ | about</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link rel="icon" type="image/png" href="/about.png" />
+                <link rel="icon" type="image/png" href="/info.png" />
             </Head>
-            <Header></Header>
+            
+            <Header 
+             quote="The privilege of a lifetime is to become who you truly are."
+             author="Carl Jung"
+            />
+
             <div className="w3-row w3-padding w3-border">
             <div className="w3-display-container w3-margin">
             <img className="w3-image" src="/about-us.jpg" alt="ABOUT US" style={{ width: '100%' }} />

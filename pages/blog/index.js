@@ -12,7 +12,10 @@ export default function Blog() {
                 <link rel="icon" type="image/png" href="/blog.png" />
             </Head>
 
-            <Header />
+            <Header 
+                quote="The pen is mightier than the sword."
+                author="Edward Bulwer-Lytton"
+            />
 
             <div className="w3-row w3-padding w3-border">
 

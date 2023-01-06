@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FaHome, FaBlogger,FaSignOutAlt } from "react-icons/fa";
 import { MdPolicy, MdContactMail, MdDescription } from "react-icons/md"
+import {ImProfile} from "react-icons/im"
 import { BsTelegram } from "react-icons/bs"
 import { FaBars } from "react-icons/fa"
 import {GiAerialSignal} from "react-icons/gi"
@@ -35,6 +36,7 @@ export default function Navbar() {
                 {
                     user &&
                     <>
+                        <Link href="/profile"><span className="w3-bar-item w3-button"><ImProfile size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >PROFILE</span></span></Link>
                         <Link href="/signal"><span className="w3-bar-item w3-button"><GiAerialSignal size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >SIGNAL</span></span></Link>
                         <Link href="/api/logout"><span className="w3-bar-item w3-button w3-right"><FaSignOutAlt size={16} style={{ verticalAlign: 'middle' }} />&nbsp;<span style={{ fontSize: 16, verticalAlign: 'middle' }} >LOGOUT</span></span></Link>
                         <span className="w3-bar-item w3-button w3-right">Current user : {user['first_name']} {user['last_name']}</span>
