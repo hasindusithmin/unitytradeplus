@@ -1,42 +1,6 @@
-h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
-body {font-family: "Open Sans";background-color: #F5F5F5;}
 
 
 body {
-    margin: 2;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
-  .container{
-    background-color: rgb(32, 16, 46);
-    opacity: 0.6;
-  }
-  
-  
-  .text-center{
-    color: azure;
-  }
-  
-  .back{
-    width: 100%;
-      height: 100%;
-      background: url(https://static.vecteezy.com/system/resources/previews/003/641/873/non_2x/modern-trading-background-creative-forex-or-cryptocurrency-chart-on-blue-wallpaper-for-financial-investment-or-economic-trends-business-idea-and-all-artwork-design-illustration-free-vector.jpg) 
-      repeat-x;
-      y-index:200;
-      z-index: 150;
-  }
-  .para{
-    color: beige;
-  }
-  
-  
-  
-  
+  font-family: 'Inter', sans-serif;
+  background-color: #F5F5F5;
+}

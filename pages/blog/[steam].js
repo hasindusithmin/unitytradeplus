@@ -12,8 +12,8 @@ function Idea({ currentItems }) {
         <>
             {
                 currentItems &&
-                currentItems.map(({ title, description, link, pubDate, image }) => 
-                    <div className="w3-container w3-white w3-margin w3-padding-large" key={link}>
+                currentItems.map(({ title, description, link, pubDate, image }) =>
+                    <div className="w3-container w3-white w3-margin w3-padding-large w3-round-large" key={link}>
                         <div className="w3-center">
                             <h3><Link href={link} target={'_blank'}>{title}</Link></h3>
                             <h5><span className="w3-opacity">{pubDate}</span></h5>
@@ -73,11 +73,12 @@ export default function Steam() {
             setCurrentItems(ideas.slice(itemOffset, endOffset));
             setPageCount(Math.ceil(ideas.length / 6));
         }
-    }, [itemOffset, 6,ideas]);
+    }, [itemOffset, 6, ideas]);
 
     const handlePageClick = (event) => {
         const newOffset = (event.selected * 6) % ideas.length;
         setItemOffset(newOffset);
+        window.scrollTo({ top: 0, behavior: 'smooth' })
     };
 
     return (
@@ -104,25 +105,28 @@ export default function Steam() {
                     {
                         ideas &&
                         <>
+                            <h3 className="w3-center w3-opacity"><b>{steam.toUpperCase()}</b></h3>
                             <Idea currentItems={currentItems} />
-                            <ReactPaginate
-                                breakLabel="..."
-                                nextLabel="&raquo;"
-                                onPageChange={handlePageClick}
-                                pageRangeDisplayed={6}
-                                pageCount={pageCount}
-                                previousLabel="&laquo;"
-                                renderOnZeroPageCount={null}
-                                className="w3-bar"
-                                pageClassName="w3-button"
-                                nextClassName="w3-button"
-                                previousClassName="w3-button"
-                                activeClassName="w3-button w3-pale-red"
-                            />
+                            <div className="w3-center">
+                                <ReactPaginate
+                                    breakLabel="..."
+                                    nextLabel="&raquo;"
+                                    onPageChange={handlePageClick}
+                                    pageRangeDisplayed={6}
+                                    pageCount={pageCount}
+                                    previousLabel="&laquo;"
+                                    renderOnZeroPageCount={null}
+                                    className="w3-bar"
+                                    pageClassName="w3-button w3-padding"
+                                    nextClassName="w3-button"
+                                    previousClassName="w3-button"
+                                    activeClassName="w3-button w3-green"
+                                />
+                            </div>
                         </>
                     }
                     {
-                        error && 
+                        error &&
                         <div className="w3-container w3-white w3-margin w3-padding-large">
                             <div className="w3-center">
                                 <div className="w3-text-red w3-leftbar">{error}</div>
@@ -144,7 +148,7 @@ export default function Steam() {
                                 <Link href={`/blog/${steam}`} key={steam} >
                                     <div className="w3-container w3-white">
                                         <div className="w3-container w3-display-container w3-light-grey w3-section" style={{ height: '50px' }}>
-                                            <span className="w3-display-middle w3-wide">{steam.toUpperCase()}<sup><img src={`/blog/${steam}.png`} alt={steam} width={18} /></sup></span>
+                                            <span className="w3-display-middle w3-wide">{steam.toUpperCase()}</span>
                                         </div>
                                     </div>
                                 </Link>

@@ -41,7 +41,7 @@ export default function Home() {
         author="Eleanor Roosevelt"
       />
 
-      {/* {height && <CryptoMarketWidget height={height} />} */}
+      {height && <CryptoMarketWidget height={height} />}
 
       <div className="w3-row w3-padding w3-border">
         <div className="w3-col l8 s12">
@@ -66,14 +66,14 @@ export default function Home() {
             </div>
           </div>
 
-          {/* <div className="w3-white w3-margin">
+          <div className="w3-white w3-margin">
             <div className="w3-container w3-black">
-              <h4>Economic Calendar</h4>
+              <h4>ECONOMIC CALENDER</h4>
             </div>
             <div className="w3-container w3-white">
               {height && <Economic height={height} />}
             </div>
-          </div> */}
+          </div>
 
 
 
@@ -98,8 +98,8 @@ export default function Home() {
             <img src="/warning.gif" alt="WARNING" style={{ width: '100%' }} className="w3-grayscale" />
             <div className="w3-container w3-black">
               <h4>WARNING</h4>
-              <p><strong>Financial Disclaimer :</strong> UNITYTRADE+ is not a financial advisor and does not provide any financial advices. There is a very high degree of risk involved in trading & Investing, specially in cryptocurrencies. Past results are not indicative of future returns and all individuals affiliated with these trading singals assume no responsibilities for your trading and investment results. The ideas presented in this trading signals are personal opinions and for educational and entertainment purposes only. You (and only you) are responsible for the financial decisions that you make. You must assess the risk of any trade with your broker or bank or exchange and make your own independent decisions regarding any currencies, securities or investments mentioned herein. UNITYTRADE+ assumes no responsibilities for your trading and investment results.</p>
             </div>
+            <p className="w3-padding"><strong>Financial Disclaimer :</strong> UNITYTRADE+ is not a financial advisor and does not provide any financial advices. There is a very high degree of risk involved in trading & Investing, specially in cryptocurrencies. Past results are not indicative of future returns and all individuals affiliated with these trading singals assume no responsibilities for your trading and investment results. The ideas presented in this trading signals are personal opinions and for educational and entertainment purposes only. You (and only you) are responsible for the financial decisions that you make. You must assess the risk of any trade with your broker or bank or exchange and make your own independent decisions regarding any currencies, securities or investments mentioned herein. UNITYTRADE+ assumes no responsibilities for your trading and investment results.</p>
           </div>
 
           <div className="w3-white w3-margin">
@@ -111,7 +111,7 @@ export default function Home() {
 
           <div className="w3-white w3-margin">
             <div className="w3-container w3-padding w3-black">
-              <h4>Advertise</h4>
+              <h4>ADVERTISE</h4>
             </div>
             <div className="w3-container w3-white">
               <div className="w3-container w3-display-container w3-light-grey w3-section" style={{ height: '200px' }}>
