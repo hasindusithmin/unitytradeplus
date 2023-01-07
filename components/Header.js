@@ -7,7 +7,7 @@ export default function Header({icon,quote,author}) {
         <header className="w3-white">
             <div className="w3-container w3-center w3-padding-48 w3-white">
                 <h1 className="w3-xxxlarge w3-hide-small"><b>UNITYTRADE</b><GoPlus fontSize={40} className="w3-spin" /></h1>
-                <h1 className="w3-xxlarge"><b>UNITYTRADE</b><GoPlus fontSize={30} className="w3-spin" /></h1>
+                <h1 className="w3-xxlarge w3-hide-large w3-hide-medium"><b>UNITYTRADE</b><GoPlus fontSize={30} className="w3-spin" /></h1>
                 {!icon && quote && author && <h6>{quote} - <span className="w3-tag w3-round-large w3-light-grey">{author}</span></h6>}
                 {icon && <h5>{icon.toUpperCase()}USDT</h5>}
                 <div className="w3-center">
