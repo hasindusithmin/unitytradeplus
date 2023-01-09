@@ -42,9 +42,85 @@ export default function Donate() {
                     <div className="w3-container w3-black">
                         <h4>LOREM</h4>
                     </div>
-                    <p >
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                    </p>
+                    <div className="w3-justify w3-padding">
+                        <p>
+                        "Thank you for considering a donation to our organization in the form of cryptocurrency. We are grateful for your support and appreciate the convenience and security of donating through this method. Your donation will go towards [cause/purpose of donation] and will make a significant impact in our efforts to [outcome of donation]. 
+                        </p>
+           
+                        <p>
+                        To make a donation, please send your contribution to the following address:
+                        </p>
+                        <p>
+
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Coin</th>
+                                        <th>Binance Wallet Receive address</th>
+                                        <th>Network</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bitcoin</td>
+
+                                        <td>
+                                        0xc1fc0f62f9cd820221ff85a4f62dad4bd9166d93 <br></br>
+                                        1D2KEHT9cP9Ekzyn532mTH3jyA2ZPj13Nt </td>
+
+                                        <td>[BNB Smart Chain(BEP20)]<br></br>
+                                            [Bitcoin]
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Litecoin</td>
+                                    
+                                        <td>1D2KEHT9cP9Ekzyn532mTH3jyA2ZPj13Nt</td>
+
+                                        <td>[BNB Smart Chain(BEP20)]</td> 
+
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </p>
+                                            [Binance Wallet Receive address]                     Network
+
+                                    BTC - 0xc1fc0f62f9cd820221ff85a4f62dad4bd9166d93    [BNB Smart Chain(BEP20)]
+                                          1D2KEHT9cP9Ekzyn532mTH3jyA2ZPj13Nt            [Bitcoin]
+
+
+                                    LTC - 1D2KEHT9cP9Ekzyn532mTH3jyA2ZPj13Nt            [BNB Smart Chain(BEP20)]
+       
+ 
+                                    TRX - 0xc1fc0f62f9cd820221ff85a4f62dad4bd9166d93    [BNB Smart Chain(BEP20)]
+                                          THjMarsDvPvn1FTqbDByPg2uMb5yDZsTod            [TRC 20]
+   
+
+                                    USDT- TH3vdwLeL4d8r4ogwf6zhZxDLV3WXC9exp              [TRC 20]  
+        
+
+
+
+                                             [Trust Wallet Receive address]
+
+                                    BTC - bc1qn6acmg8upr22n85f8gxdjy47u5v3z9cn7xvlmr
+   
+                                    LTC - ltc1qsrk9zuca58tr328fewqpjsplzxpq2ms4g6edfj
+ 
+                                    TRX - TH3vdwLeL4d8r4ogwf6zhZxDLV3WXC9exp
+
+                                    USDT- TH3vdwLeL4d8r4ogwf6zhZxDLV3WXC9exp               [TRC 20]
+
+
+
+
+                        <p>
+                        "Thank you again for your generosity and kindness."
+                        </p>
+                 </div>
                 </div>
                 <div className="w3-white w3-margin">
                     <div className="w3-container w3-black">
