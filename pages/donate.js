@@ -75,7 +75,7 @@ export default function Donate() {
              <tr>
                <td> USDT</td>
                <td>TH3vdwLeL4d8r4ogwf6zhZxDLV3WXC9exp</td>
-               <td>[TRC 20] </td>
+               <td>[TRC 20]</td>
              </tr>
            </tbody>
          </table>
