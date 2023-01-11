@@ -16,8 +16,16 @@ export default function About() {
 
       <div className="w3-row w3-padding w3-border">
 
-        <div className="w3-col w3-display-container w3-padding">
+        <div className="w3-col w3-display-container w3-padding w3-hide-large w3-hide-medium">
           <img className="w3-image w3-sepia" src="/about.gif" alt="ABOUT" style={{ width: '100%' }} />
+          <div className="w3-display-middle">
+            <span className="w3-jumbo w3-hide-small w3-text-dark-grey"><b>ABOUT</b> </span>
+            <span className="w3-xlarge w3-hide-large w3-hide-medium w3-text-dark-grey"><b>ABOUT</b> </span>
+          </div>
+        </div>
+
+        <div className="w3-col w3-display-container  w3-hide-small w3-center w3-white">
+          <img className="w3-image w3-sepia" src="/about.gif" alt="ABOUT" style={{ width: '50%' }} />
           <div className="w3-display-middle">
             <span className="w3-jumbo w3-hide-small w3-text-dark-grey"><b>ABOUT</b> </span>
             <span className="w3-xlarge w3-hide-large w3-hide-medium w3-text-dark-grey"><b>ABOUT</b> </span>
